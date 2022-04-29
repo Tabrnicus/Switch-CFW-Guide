@@ -1,0 +1,41 @@
+name: Deploy Docs
+
+# https://stackoverflow.com/questions/63460875/github-actions-how-do-you-trigger-a-push-when-a-specific-directory-in-a-branch
+on:
+  # Able to run manually
+  workflow_dispatch:
+
+  # Runs when there are any changes to master:docs/
+  push:
+    branches:
+      - master
+    paths:
+      - docs/**
+
+jobs:
+  publish-docs:
+
+    name: publish-docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Sources
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: '3.9'
+
+      - name: Install requirements
+        run: pip3 install -r requirements.txt
+
+      - name: Set config for github-actions
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Fetch gh-pages branch
+        run: git fetch origin gh-pages:gh-pages
+
+      - name: Deploy docs to GH Pages
+        run: mkdocs gh-deploy -s

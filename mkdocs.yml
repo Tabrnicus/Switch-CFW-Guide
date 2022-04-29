@@ -1,0 +1,35 @@
+site_name: Switch CFW Guide
+
+extra_css:
+  - extra.css
+
+theme:
+  name: material
+  include_homepage_in_sidebar: true
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+
+plugins:
+  - awesome-pages:
+      filename: .pages.yml
+
+markdown_extensions:
+  - toc:
+      toc_depth: 4
+  - admonition:
+  - attr_list:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
