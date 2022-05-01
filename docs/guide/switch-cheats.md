@@ -1,0 +1,3 @@
+# Cheats (Switch Games)
+
+TODO

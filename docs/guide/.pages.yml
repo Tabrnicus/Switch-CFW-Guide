@@ -1,1 +1,11 @@
 title: 'Guide'
+nav:
+  - definitions.md
+  - one-pager.md
+  - differences.md
+  - startup-shutdown.md
+  - sd-card.md
+  - homebrews.md
+  - switch-cheats.md
+  - emulation.md
+  - ...

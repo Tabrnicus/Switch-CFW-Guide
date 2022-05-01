@@ -6,7 +6,7 @@ This guide is primarily aimed at people who have not set up their own Switch CFW
 
 ## Using This Guide
 
-Use the navigation (sidebar or hamburger menu) to explore the various topics. You might want to start at [the definitions section](guide/definitions.md).
+Use the navigation (sidebar or hamburger menu) to explore the various topics. A good place to start is the [definitions section](guide/definitions.md), then [the one-pager](guide/one-pager.md).
 
 ## Credits
 
