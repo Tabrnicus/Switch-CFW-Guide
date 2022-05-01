@@ -4,9 +4,9 @@ This is a guide for using a Nintendo Switch with CFW (**C**ustom **F**irm**w**ar
 
 This guide is primarily aimed at people who have not set up their own Switch CFW (if you've done that, you likely know how to use it). Rather, if you've set up a CFW for someone else, they can refer to this guide.
 
-## Setup
+## Assumed Setup
 
-This guide was based on the resulting setup by following this [rentry guide](https://rentry.org/SwitchHackingIsEasy).
+Note that this guide assumes you have a setup similar to the one produced by following this [rentry guide](https://rentry.org/SwitchHackingIsEasy).
 
 ## Using This Guide
 
