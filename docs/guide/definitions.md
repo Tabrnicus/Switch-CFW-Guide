@@ -2,13 +2,17 @@
 
 These are a list of common definitions that you will see in this guide. This is a good reference point when you're unclear what an acronym means, for example.
 
+## Payload
+
+Some code that we inject into the Switch in order to facilitate running extra software or modified operating systems. In other words, we "inject" payloads (code) to the Switch in order to help us run extra software.
+
 ## CFW (**C**ustom **F**irm**w**are)
 
 This refers to the modified software / operating system that runs on the exploited Switch that enables you to do all the cool things outlined in this guide.
 
 ### Atmosphère
 
-This is the CFW that you will likely be using. It's nearly identical to the switch's original firmware (OFW), with some changes, mostly under-the-hood.
+This is the CFW that you will be using. It's nearly identical to the switch's original firmware (OFW), with some changes, mostly under-the-hood.
 
 [More details about the CFW here](differences.md).
 
@@ -17,6 +21,16 @@ Atmosphère [on Github](https://github.com/Atmosphere-NX/Atmosphere)
 ## OFW (**O**riginal **F**irm**w**are)
 
 The stock software / operating system that comes with your Switch hardware, before any modification.
+
+## Bootloader
+
+A bootloader is a piece of software (usually injected as a [payload](#payload) whilst in [RCM](#rcm-recovery-mode)) that helps us boot into CFWs, like [Atmosphère](#atmosphere). A bootloader would be one of the first pieces of software that are loaded when the system starts.
+
+### Hekate
+
+This is the bootloader that you will be using. Note only does it include all the necessary software to perform the booting process, but it includes tools for backing up important data, among other things.
+
+[Hekate on Github](https://github.com/CTCaer/hekate)
 
 ## RCM (**R**e**c**overy **M**ode)
 
@@ -27,6 +41,10 @@ The Switch's "debug mode". This mode is usually reserved for developers, but we 
 ### RCM Jig
 
 This is the little plastic device that slides into the right Joycon rail that allows us to access RCM. Basically, the function of this device is to bridge two very specific pins together on that rail.
+
+### AutoRCM
+
+This is a mode that is set by the bootloader
 
 ## Homebrew(s)
 
