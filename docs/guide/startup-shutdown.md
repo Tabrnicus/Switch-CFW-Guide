@@ -1,5 +1,8 @@
 # Startup / Shutdown
 
+!!! error "WIP"
+    This article is a work in progress!
+
 ## From Cold Boot
 
 If your switch is shut down, out of battery, or is otherwise completely off, you must take extra steps to boot into the CFW, which in most cases requires a computer.
