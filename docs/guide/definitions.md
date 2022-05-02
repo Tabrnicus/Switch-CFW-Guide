@@ -42,9 +42,14 @@ The Switch's "debug mode". This mode is usually reserved for developers, but we 
 
 This is the little plastic device that slides into the right Joycon rail that allows us to access RCM. Basically, the function of this device is to bridge two very specific pins together on that rail.
 
+<figure markdown>
+  ![RCM Jig](../assets/images/jig-side.png){ width=400 }
+  <figcaption>An RCM jig that inserts into the right Joycon rail</figcaption>
+</figure>
+
 ### AutoRCM
 
-This is a mode that is set by the bootloader
+This is a mode that is configured in the Hekate bootloader that forces your switch to go into RCM upon every boot. The advantage of this mode is that you never have to use an RCM jig to inject payloads. However, the disadvantage is that you will not be able to boot into the Switch in any capacity without a payload injector available.
 
 ## Homebrew(s)
 
