@@ -6,6 +6,10 @@ Compared to the original firmware (OFW), the custom firmware (CFW) has many diff
 
 Visually speaking, the interface will look the same. There are some differences, like the [album applet](#album-applet), described below.
 
+## Applications
+
+Applications, like games, should run the same, as you'd expect. With the CFW you're able to enable overlays to apply cheats, for example. [More about how to do that here](switch-cheats.md).
+
 ## Album Applet
 
 You'll notice that when you try to access the Photo Album, you'll get a different interface. This is how you run **applet versions** of homebrew applications, and it replaces the function of the album.
