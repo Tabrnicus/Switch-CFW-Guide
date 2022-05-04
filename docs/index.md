@@ -8,6 +8,11 @@ This guide is primarily aimed at people who have not set up their own Switch CFW
 
 Note that this guide assumes you have a setup similar to the one produced by following this [rentry guide](https://rentry.org/SwitchHackingIsEasy).
 
+With these additional modifications:
+
+- Auto Boot is enabled
+- `reboot_payload.bin` is replaced with a copy of the Hekate bootloader binary.
+
 ## Using This Guide
 
 Use the navigation (sidebar or hamburger menu) to explore the various topics. A good place to start is the [definitions section](guide/definitions.md), then [the one-pager](guide/one-pager.md).
