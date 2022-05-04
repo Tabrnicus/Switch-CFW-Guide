@@ -1,8 +1,5 @@
 # Startup / Shutdown
 
-!!! error "WIP"
-    This article is a work in progress!
-
 ## From Cold Boot
 
 If your switch is shut down, out of battery, or is otherwise completely off, you must take extra steps to boot into the CFW, which in most cases requires a computer.
@@ -51,16 +48,41 @@ Once you press `Connect`, it should work. You should see the Hekate logo, and it
 
 ## Launching CFW
 
-TODO
+Assuming you've booted into Hekate, in order to get into Atmosphère, just click the big "Launch" button and choose either:
+
+- `Atmosphere FSS0 EmuMMC`; or
+- `Atmosphere CFW`
+
+... whichever is applicable. Here's an example:
+
+<figure markdown>
+  ![Hekate Bootloader](../assets/images/hekate-launch.png){ width=600 }
+  <figcaption>In this case we'd pick the first option.</figcaption>
+</figure>
+!!! info "Hekate Auto Boot"
+    If you have "Auto Boot" (*NOT AutoRCM*) enabled, then this step will happen automatically.
 
 ## Restarting
 
-TODO
+To restart your console, do as normal (hold power button, click "Power Options" and click "Restart").
+
+Depending on whether you have Auto Boot enabled, you either have to do nothing and just wait, or follow the [above section](#launching-cfw) to boot into Atmosphère.
+
+## Accessing Bootloader with Auto Boot
+
+You'll notice that you're seemingly unable to access Hekate by restarting, as it just auto boots you into the CFW. If for whatever reason you need access to Hekate do the following:
+
+1. Reboot the console
+2. Wait until the Hekate logo appears
+3. Hold the volume down button
+
+This should cancel the auto boot and should place you in the bootloader. Then you can use [the same instructions above](#launching-cfw) to launch into Atmosphère once you're done.
 
 ## Shutdown
 
-TODO
+If you have AutoRCM disabled, shutdown happens normally (hold power button, click "Power Options" and click "Shutdown").
 
-## Accessing Bootloader
+If you have AutoRCM enabled, powering off is a bit more complicated. You have to [boot into Hekate](#accessing-bootloader-with-auto-boot) and use its menu to shut down (bottom right, labelled "Power Off").
 
-TODO
+!!! warning "Implications"
+    Shutting down will prevent you from booting into Hekate without a computer, so make sure you plan for this if you want to shut down your Switch.
