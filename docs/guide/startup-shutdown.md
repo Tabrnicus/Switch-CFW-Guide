@@ -59,6 +59,7 @@ Assuming you've booted into Hekate, in order to get into Atmosphère, just click
   ![Hekate Bootloader](../assets/images/hekate-launch.png){ width=600 }
   <figcaption>In this case we'd pick the first option.</figcaption>
 </figure>
+
 !!! info "Hekate Auto Boot"
     If you have "Auto Boot" (*NOT AutoRCM*) enabled, then this step will happen automatically.
 
