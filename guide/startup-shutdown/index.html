@@ -353,15 +353,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#shutdown" class="md-nav__link">
-    Shutdown
+  <a href="#accessing-bootloader-with-auto-boot" class="md-nav__link">
+    Accessing Bootloader with Auto Boot
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-bootloader" class="md-nav__link">
-    Accessing Bootloader
+  <a href="#shutdown" class="md-nav__link">
+    Shutdown
   </a>
   
 </li>
@@ -525,15 +525,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#shutdown" class="md-nav__link">
-    Shutdown
+  <a href="#accessing-bootloader-with-auto-boot" class="md-nav__link">
+    Accessing Bootloader with Auto Boot
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-bootloader" class="md-nav__link">
-    Accessing Bootloader
+  <a href="#shutdown" class="md-nav__link">
+    Shutdown
   </a>
   
 </li>
@@ -553,10 +553,6 @@
 
 
 <h1 id="startup-shutdown">Startup / Shutdown</h1>
-<div class="admonition error">
-<p class="admonition-title">WIP</p>
-<p>This article is a work in progress!</p>
-</div>
 <h2 id="from-cold-boot">From Cold Boot</h2>
 <p>If your switch is shut down, out of battery, or is otherwise completely off, you must take extra steps to boot into the CFW, which in most cases requires a computer.</p>
 <h3 id="entering-rcm">Entering RCM</h3>
@@ -585,13 +581,39 @@
 <img alt="RCM jig side" src="../../assets/images/wfl-device.png" width="49%" /></p>
 <p>Once you press <code>Connect</code>, it should work. You should see the Hekate logo, and it should either take you to the Switch CFW or land you at the Hekate home screen (depending on your setup).</p>
 <h2 id="launching-cfw">Launching CFW</h2>
-<p>TODO</p>
+<p>Assuming you've booted into Hekate, in order to get into Atmosphère, just click the big "Launch" button and choose either:</p>
+<ul>
+<li><code>Atmosphere FSS0 EmuMMC</code>; or</li>
+<li><code>Atmosphere CFW</code></li>
+</ul>
+<p>... whichever is applicable. Here's an example:</p>
+<figure>
+<p><img alt="Hekate Bootloader" src="../../assets/images/hekate-launch.png" width="600" />
+  </p>
+<figcaption>In this case we'd pick the first option.</figcaption>
+</figure>
+<div class="admonition info">
+<p class="admonition-title">Hekate Auto Boot</p>
+<p>If you have "Auto Boot" (<em>NOT AutoRCM</em>) enabled, then this step will happen automatically.</p>
+</div>
 <h2 id="restarting">Restarting</h2>
-<p>TODO</p>
+<p>To restart your console, do as normal (hold power button, click "Power Options" and click "Restart").</p>
+<p>Depending on whether you have Auto Boot enabled, you either have to do nothing and just wait, or follow the <a href="#launching-cfw">above section</a> to boot into Atmosphère.</p>
+<h2 id="accessing-bootloader-with-auto-boot">Accessing Bootloader with Auto Boot</h2>
+<p>You'll notice that you're seemingly unable to access Hekate by restarting, as it just auto boots you into the CFW. If for whatever reason you need access to Hekate do the following:</p>
+<ol>
+<li>Reboot the console</li>
+<li>Wait until the Hekate logo appears</li>
+<li>Hold the volume down button</li>
+</ol>
+<p>This should cancel the auto boot and should place you in the bootloader. Then you can use <a href="#launching-cfw">the same instructions above</a> to launch into Atmosphère once you're done.</p>
 <h2 id="shutdown">Shutdown</h2>
-<p>TODO</p>
-<h2 id="accessing-bootloader">Accessing Bootloader</h2>
-<p>TODO</p>
+<p>If you have AutoRCM disabled, shutdown happens normally (hold power button, click "Power Options" and click "Shutdown").</p>
+<p>If you have AutoRCM enabled, powering off is a bit more complicated. You have to <a href="#accessing-bootloader-with-auto-boot">boot into Hekate</a> and use its menu to shut down (bottom right, labelled "Power Off").</p>
+<div class="admonition warning">
+<p class="admonition-title">Implications</p>
+<p>Shutting down will prevent you from booting into Hekate without a computer, so make sure you plan for this if you want to shut down your Switch.</p>
+</div>
 
               
             </article>

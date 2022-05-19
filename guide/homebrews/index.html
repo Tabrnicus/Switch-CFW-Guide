@@ -295,9 +295,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Homebrew(s)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Homebrew(s)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ftpd-pro" class="md-nav__link">
+    FTPd Pro
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -358,6 +389,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ftpd-pro" class="md-nav__link">
+    FTPd Pro
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -375,7 +421,49 @@
 <p class="admonition-title">WIP</p>
 <p>This article is a work in progress!</p>
 </div>
-<p>TODO</p>
+<h2 id="ftpd-pro">FTPd Pro</h2>
+<p>If you need to transfer single files that are not too large, it may be more convenient to transfer files over the network. You can use a Homebrew called <code>ftpd</code> from mtheall and TuxSH.</p>
+<ol>
+<li>Make sure you are connected to Wi-Fi</li>
+<li>
+<p>Go to the Homebrew loader (Album app), and pick <code>ftpd pro</code>:</p>
+<ul>
+<li>You may see two versions of the application, <code>ftpd pro</code>, and <code>ftpd classic</code>. Both will work fine, but the pro version has a better UI.
+<figure markdown>
+  <img alt="ftpd on homebrew menu" src="../../assets/images/ftpd-homebrew.png" width="600" />
+</figure></li>
+</ul>
+</li>
+<li>
+<p>Launch it and take note of the IP address and port it lists at the top:</p>
+<p><figure markdown>
+  <img alt="ftpd example run" src="../../assets/images/ftpd-example.png" width="600" />
+<figcaption>In this case, the IP is 192.168.1.67 and the port is 5000.</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Use your favorite FTP client (FileZilla, Cyberduck, etc.) to connect to the FTP server.</p>
+<ul>
+<li>By default, the server allows <strong>anonymous</strong> connections, meaning that you do not have to specify a user and password combination. You can change this behaviour using the menu accessed via the <code>y</code> button (<span class="twemoji"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256,103.51c-84.08,0-152.49,68.41-152.49,152.49S171.92,408.49,256,408.49,408.49,340.08,408.49,256,340.08,103.51,256,103.51Zm9.26,159.81v64.19h-24V263.32l-53.55-74.9,30,.07,35.53,49.8,35.52-49.8,30-.07Z"/></svg></span>), while in <code>ftpd pro</code>.</li>
+</ul>
+</li>
+<li>
+<p>Transfer the files you need</p>
+<ul>
+<li>You should see a lot of activity on the Switch when transferring. This is normal.</li>
+</ul>
+</li>
+<li>
+<p>Exit the FTP server from the Switch</p>
+<ul>
+<li>This can either be done by navigating away (Press Home (<span class="twemoji"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M201.92,227.11v84.26H307.51V227.11l-52.8-46.37Zm80.69,65.69H229.14V244.27h53.47Z"/><path d="M256,408.49c84.08,0,152.49-68.41,152.49-152.49S340.08,103.51,256,103.51,103.51,171.92,103.51,256,171.92,408.49,256,408.49Zm73.12-165.8V333H180.31V242.69H151.43L254.71,152,358,242.69Z"/></svg></span>), etc.) or by pressing the Plus or Minus key (<span class="twemoji"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256,408.49c84.08,0,152.49-68.41,152.49-152.49S340.08,103.51,256,103.51,103.51,171.92,103.51,256,171.92,408.49,256,408.49Zm19.43-135.9V354.7H242.25V272.59H160.14V239.41h82.11V157.3h33.18v82.11h82.11v33.18Z"/></svg></span> / <span class="twemoji"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256,103.51c-84.08,0-152.49,68.41-152.49,152.49S171.92,408.49,256,408.49,408.49,340.08,408.49,256,340.08,103.51,256,103.51Zm85.67,170.91H176V237.59H341.67Z"/></svg></span>).</li>
+</ul>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Server Lifetime</p>
+<p>Note that the server will only stay up as long as you have this applet open. Pressing Home (<span class="twemoji"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M201.92,227.11v84.26H307.51V227.11l-52.8-46.37Zm80.69,65.69H229.14V244.27h53.47Z"/><path d="M256,408.49c84.08,0,152.49-68.41,152.49-152.49S340.08,103.51,256,103.51,103.51,171.92,103.51,256,171.92,408.49,256,408.49Zm73.12-165.8V333H180.31V242.69H151.43L254.71,152,358,242.69Z"/></svg></span>) or navigating away by any means <strong>will kill the server</strong>.</p>
+</div>
 
               
             </article>

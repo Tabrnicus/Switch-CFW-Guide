@@ -281,9 +281,94 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          The SD Card
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         The SD Card
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operating-system" class="md-nav__link">
+    Operating System
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emunand" class="md-nav__link">
+    emuNAND
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sysnand" class="md-nav__link">
+    sysNAND
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-sd-card-properly" class="md-nav__link">
+    Removing SD Card Properly
+  </a>
+  
+    <nav class="md-nav" aria-label="Removing SD Card Properly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-off-switch" class="md-nav__link">
+    Power Off Switch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boot-into-hekate" class="md-nav__link">
+    Boot into Hekate
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transferring-files-with-ftp" class="md-nav__link">
+    Transferring Files with FTP
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -358,6 +443,75 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operating-system" class="md-nav__link">
+    Operating System
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emunand" class="md-nav__link">
+    emuNAND
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sysnand" class="md-nav__link">
+    sysNAND
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-sd-card-properly" class="md-nav__link">
+    Removing SD Card Properly
+  </a>
+  
+    <nav class="md-nav" aria-label="Removing SD Card Properly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-off-switch" class="md-nav__link">
+    Power Off Switch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boot-into-hekate" class="md-nav__link">
+    Boot into Hekate
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transferring-files-with-ftp" class="md-nav__link">
+    Transferring Files with FTP
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -371,11 +525,49 @@
 
 
 <h1 id="the-sd-card">The SD Card</h1>
-<div class="admonition error">
-<p class="admonition-title">WIP</p>
-<p>This article is a work in progress!</p>
+<p>When running a CFW, special attention must be paid attention to the SD card, as it holds many important files.</p>
+<h2 id="operating-system">Operating System</h2>
+<h3 id="emunand">emuNAND</h3>
+<p>While using emuNAND, recall that your operating system is run off the SD card, instead of the Switch's internal memory. This means that you should <strong>NEVER</strong> eject the SD card from the Switch while it is on. Doing so would be equivalent to yanking out your hard drive of your computer while it is operational.</p>
+<h3 id="sysnand">sysNAND</h3>
+<p>While using sysNAND, the operating system is run off of the Switch's internal memory, so removing the SD card is less catastrophic. That being said, all the files that allow the CFW to work in the first place are stored only on the SD card, so removing whist the Switch is operational is not a very good idea.</p>
+<hr>
+
+<div class="admonition danger">
+<p class="admonition-title">TL;DR</p>
+<p>Basically, if the Switch is on, <strong>DO NOT EJECT</strong> the SD card. You risk corrupting data you have on the SD card and your Switch's internal memory. Use one of the methods listed below to safely eject the SD card.</p>
 </div>
-<p>TODO</p>
+<hr>
+
+<h2 id="removing-sd-card-properly">Removing SD Card Properly</h2>
+<p>So you've seen how terrible it would be to remove the SD card while the Switch is on, but how do you actually do it if you need to? You have two options:</p>
+<h3 id="power-off-switch">Power Off Switch</h3>
+<p>The simplest way to achieve safe ejection is to power off the Switch fully:</p>
+<ol>
+<li>Power off the Switch</li>
+<li>Remove the SD card</li>
+<li>Transfer whatever files you need</li>
+<li>Put the SD card back</li>
+<li>Power on and <a href="../startup-shutdown/#from-cold-boot">re-inject your payload</a> to get into the CFW.</li>
+</ol>
+<h3 id="boot-into-hekate">Boot into Hekate</h3>
+<p>Powering off and re-injecting payloads is a bit annoying if you have to eject the SD card a lot, so there is a faster but slightly more complex way to achieve the same result:</p>
+<ol>
+<li>Access Hekate (the bootloader) by <a href="../startup-shutdown/#accessing-bootloader-with-auto-boot">restarting the Switch and holding Volume Down</a></li>
+<li>Remove the SD card (yes, while Hekate is on-screen!)<ul>
+<li>A dialog box should come up. <em>Don't worry about clicking anything here</em>.</li>
+</ul>
+</li>
+<li>Transfer whatever files you need</li>
+<li>Put the SD card back<ul>
+<li>Once inserted, Hekate should respring automatically without any further input.</li>
+</ul>
+</li>
+<li><a href="../startup-shutdown/#launching-cfw">Boot into Atmosphère</a> by selecting it from the "Launch" list</li>
+</ol>
+<h2 id="transferring-files-with-ftp">Transferring Files with FTP</h2>
+<p>If you just need to transfer small files and don't actually need to remove the SD card, then it may be more convenient to transfer files over the network. This does not require you to power off the Switch by any means to transfer files.</p>
+<p>Please refer to the <a href="../homebrews/#ftpd-pro">section detailing FTPd Pro</a> for instructions on how to use it.</p>
 
               
             </article>
