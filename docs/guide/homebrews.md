@@ -1,8 +1,5 @@
 # Homebrew(s)
 
-!!! error "WIP"
-    This article is a work in progress!
-
 This section will cover various useful applications that you can run in the CFW. Some homebrews will have their own pages.
 
 ## How to Access Homebrews
@@ -42,6 +39,9 @@ If you succeeded, then you should see something like this (importantly, with no 
 
 If the game launches instead, go home (:nx-buttons-home:), quit the game, and try again. Make sure you hold the right bumper (:nx-buttons-r:) before attempting to launch again -- and that you are **not letting go** of the button until you see the menu.
 
+!!! info "Title Mode Lifetime"
+    Homebrew applications in this mode effectively run as a "game". This means that it will continue to run even if you go to the homescreen (marked with "Playing"). However, if you put the console to sleep, the application may stop working.
+
 ## Homebrews
 
 !!! tip "Quitting Some Homebrews"
@@ -49,15 +49,23 @@ If the game launches instead, go home (:nx-buttons-home:), quit the game, and tr
 
 ### Homebrew Appstore
 
+This one is pretty self-explanatory. This is an application you can use to get more homebrews without needing to manually download and copy them to the SD card. It also supports updating such applications, which is very convenient.
+
+<figure markdown>
+  ![HB Appstore](../assets/images/hb-appstore-preview.png){ width=600 }
+</figure>
+
 ### NX-Shell
+
+This is a file browser for the Switch (mostly SD card). It's not often you need to use this, but for moving/copying/deleting files in a pinch, it's good to have.
 
 ### FTPd Pro
 
-If you need to transfer single files that are not too large, it may be more convenient to transfer files over the network. You can use a Homebrew called `ftpd` from mtheall and TuxSH.
+If you need to transfer single files that are not too large, it may be more convenient to transfer files over the network. Specifically, this is the homebrew `ftpd` authored by mtheall and TuxSH.
 
 1. Make sure you are connected to Wi-Fi
-2. Go to the Homebrew loader (Album app), and pick `ftpd pro`:
-    - You may see two versions of the application, `ftpd pro`, and `ftpd classic`. Both will work fine, but the pro version has a better UI.
+2. Navigate to the Homebrew menu (Album app), and pick `ftpd pro`:
+    - You may see two versions of the application, `ftpd pro`, and `ftpd classic`. Both will work fine, but the pro version has a friendlier UI.
     <figure markdown>
       ![ftpd on homebrew menu](../assets/images/ftpd-homebrew.png){ width=600 }
     </figure>
@@ -79,8 +87,12 @@ If you need to transfer single files that are not too large, it may be more conv
     - This can either be done by navigating away (Press Home (:nx-buttons-home:), etc.) or by pressing the Plus or Minus key (:nx-buttons-plus: / :nx-buttons-minus:).
 
 !!! warning "Server Lifetime"
-    Note that the server will only stay up as long as you have this applet open. Pressing Home (:nx-buttons-home:) or navigating away by any means **will kill the server**.
+    Note that the server will only stay up as long as you have this applet open. Pressing Home (:nx-buttons-home:) or navigating away by any means **will kill the server**. If you need the freedom of navigating away, consider launching it in [title mode](#title-mode-through-game).
 
 ### EdiZon
 
+EdiZon SE is a save management and cheat loading tool (among other things). We will use it to manage cheats on applicable Switch games. We will also be using an overlay extension to make enabling cheats in-game much more convenient. More details [in the section about cheats](switch-cheats.md).
+
 ### RetroArch
+
+RetroArch is an all-in-one front-end emulator for many consoles. You'll learn about how to install cores, games, apply cheats, etc. [in the section about RetroArch](emulation.md).
