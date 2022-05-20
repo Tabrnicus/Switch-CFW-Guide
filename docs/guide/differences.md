@@ -16,7 +16,7 @@ You'll notice that when you try to access the Photo Album, you'll get a differen
 
 However, the previous functionality is not lost. To access the album as normal, hold the right trigger (:nx-buttons-r:) and select the album icon (using :nx-buttons-a:, or using the touchscreen).
 
-[More details about running homebrews and the album here](homebrews.md).
+[More details about running homebrews and the album here](homebrews.md#applet-mode).
 
 ## Communication With Nintendo
 
