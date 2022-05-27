@@ -34,14 +34,35 @@ Another thing to try is "Update Cheats" by pressing the plus (:nx-buttons-plus:)
 
 ### Updating Database
 
-If the above step does not work, then EdiZon may need an update to its cheat database. You can do this by pressing the minus (:nx-buttons-minus:) button.
+If the above step does not work, then EdiZon may need an update to its cheat database. You can do this by pressing the minus (:nx-buttons-minus:) button. You'll be brought to a screen that looks like this (yours may look different if there is an update available):
+
+<figure markdown>
+  ![EdiZon Update Screen](../assets/images/edizon-update.png){ width=600 }
+</figure>
+
+Follow the on-screen prompts to perform the update. After it's complete, you can back up from that menu and see if the cheats are present.
+
+!!! warning "Absence of Cheats"
+    If you find yourself trying to reload cheats to no avail, the game may not have any cheats available. It's possible a different homebrew has cheats, but this is unlikely.
 
 ## Applying Cheats
 
-Some games don't have cheats
+Applying cheats are as simple as checking the boxes in the EdiZon applet while the game is running, or use the overlay.
 
-Some games will crash when enabling cheats
+!!! info
+    Make sure that the game is running, and EdiZon is loaded via applet mode.
 
 ### Applet
+
+Assuming you have cheats loaded, the main EdiZon splash screen should look something like this:
+
+<figure markdown>
+  ![EdiZon with Cheats](../assets/images/edizon-applet.png){ width=600 }
+</figure>
+
+Simply just check the cheats that you want to enable and go back to the game.
+
+!!! warning "Applying Too Many Cheats"
+    Some games are pretty picky about modifications to the game, so you can expect to encounter some crashes or unexpected behaviour, especially when applying multiple at once.
 
 ### Overlay
