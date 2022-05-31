@@ -1,9 +1,6 @@
 # Cheats (Switch Games)
 
-!!! error "WIP"
-    This article is a work in progress!
-
-This will walk you through how to enable cheats from
+This will walk you through how to enable cheats for Switch Games, through EdiZon.
 
 ## Requirements
 
@@ -66,3 +63,22 @@ Simply just check the cheats that you want to enable and go back to the game.
     Some games are pretty picky about modifications to the game, so you can expect to encounter some crashes or unexpected behaviour, especially when applying multiple at once.
 
 ### Overlay
+
+After you've loaded cheats at least once (i.e. you've encountered a screen [similar to the one above](#applet)), you can now load cheats through the overlay when in-game.
+
+To open the overlay, press left bumper, d-pad down, and click the right stick in ( :nx-buttons-l: + :nx-buttons-joycon-dpad-down: + :nx-buttons-right-stick-click: ). You should see something like this:
+
+<figure markdown>
+  ![Tesla Overlay](../assets/images/tesla-overlay.png){ width=600 }
+</figure>
+
+This is the Tesla overlay. You can have many applets in this menu, but the one we want to use is EdiZon. Once selected, you should see something like this (assuming your game has cheats):
+
+<figure markdown>
+  ![EdiZon Overlay](../assets/images/edizon-overlay.png){ width=600 }
+</figure>
+
+Simply select the cheats you want to enable from this menu. You may close and return to this menu at any point without having to leave the game.
+
+!!! note
+    The same warnings from the previous section apply here, especially the one about enabling too many cheats at once.
