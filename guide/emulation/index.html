@@ -323,9 +323,101 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Emulation (RetroArch)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Emulation (RetroArch)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-roms" class="md-nav__link">
+    Adding ROMs
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding ROMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moving-to-sd-card" class="md-nav__link">
+    Moving to SD Card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scanning-for-new-files" class="md-nav__link">
+    Scanning For New Files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-cores" class="md-nav__link">
+    Downloading Cores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-games" class="md-nav__link">
+    Running Games
+  </a>
+  
+    <nav class="md-nav" aria-label="Running Games">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-menu" class="md-nav__link">
+    Quick Menu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-cheats" class="md-nav__link">
+    Enabling Cheats
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -358,6 +450,82 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-roms" class="md-nav__link">
+    Adding ROMs
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding ROMs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moving-to-sd-card" class="md-nav__link">
+    Moving to SD Card
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scanning-for-new-files" class="md-nav__link">
+    Scanning For New Files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloading-cores" class="md-nav__link">
+    Downloading Cores
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-games" class="md-nav__link">
+    Running Games
+  </a>
+  
+    <nav class="md-nav" aria-label="Running Games">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-menu" class="md-nav__link">
+    Quick Menu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-cheats" class="md-nav__link">
+    Enabling Cheats
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -375,7 +543,38 @@
 <p class="admonition-title">WIP</p>
 <p>This article is a work in progress!</p>
 </div>
-<p>TODO</p>
+<h2 id="summary">Summary</h2>
+<p>RetroArch is a front-end for emulating a variety of games. Specifically, RetroArch is not itself an emulator, rather it loads stripped down emulators (called cores) to actually handle the brunt of the work, while providing a nice interface to interact with everything.</p>
+<h2 id="adding-roms">Adding ROMs</h2>
+<h3 id="moving-to-sd-card">Moving to SD Card</h3>
+<p>Once you have your ROM (sourced however you want), you want to add them into a directory on your Switch's SD card. The actual location doesn't matter but it is suggested that you keep all the ROMs in one location, preferably organized into subfolders.</p>
+<p>An example of this could be:</p>
+<pre><code>/roms/
+├── arcade/
+│   ├── 1942w.zip
+│   └── 19xx.zip
+├── gba/
+│   └── Mario vs. Donkey Kong (USA).gba
+└── snes/
+    ├── Super Mario World (USA).sfc
+    ├── Super Mario World 2 - Yoshi's Island (USA).sfc
+    └── Final Fantasy III (USA).sfc
+</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Be as Organized as You Want</p>
+<p>The organization tips above are entirely optional. RetroArch will ultimately scan for compatible files in any directory you provide it, regardless of the structure. So you may be as organized or disorganized as you'd like.  </p>
+</div>
+<h3 id="scanning-for-new-files">Scanning For New Files</h3>
+<h2 id="downloading-cores">Downloading Cores</h2>
+<p>While the default RetroArch installation comes with a handful of cores installed, you will likely need to download a couple. thankfully, RetroArch has a convenient way of obtaining them.</p>
+<p>Navigate to <code>Main Menu</code> &gt; <code>Online Updater</code> &gt; <code>Core Downloader</code>. You should see a list of cores available for download, listing the console that they emulate, followed by the unique name in parentheses.</p>
+<div class="admonition warning">
+<p class="admonition-title">Many Cores, One Console</p>
+<p>There can be many cores that emulate a given console. Each are different projects that aim to do the same thing, so naturally there can be some differences between them. Some cores emulate specific games better than others, so make sure you do some cursory research to see which core is better for your particular game. Most of the time though, any choice from the RetroArch list should be fine. The only exception to this is arcade games, as they are more sensitive to core differences.</p>
+</div>
+<h2 id="running-games">Running Games</h2>
+<h3 id="quick-menu">Quick Menu</h3>
+<h2 id="enabling-cheats">Enabling Cheats</h2>
 
               
             </article>
